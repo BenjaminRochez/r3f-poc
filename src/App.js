@@ -39,7 +39,7 @@ const HTMLContent = ({
   });
 
   useEffect(() => {
-    inView && (document.body.style.background = bgColor);
+    inView && (document.body.style.background = bgColor);// eslint-disable-line react-hooks/exhaustive-deps
   }, [inView]);
 
   return (
