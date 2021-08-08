@@ -39,8 +39,10 @@ const HTMLContent = ({
   });
 
   useEffect(() => {
-    inView && (document.body.style.background = bgColor);// eslint-disable-line react-hooks/exhaustive-deps
+    inView && (document.body.style.background = bgColor);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
+  
 
   return (
     <Section factor={1.5} offset={1}>
